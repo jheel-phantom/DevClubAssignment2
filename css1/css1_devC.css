@@ -1,0 +1,30 @@
+table {
+	width:75%;
+	border-collapse:collapse;
+}
+.d1 {
+	background-color:red;
+	padding:80px;
+}
+
+.d2 {
+	background-color:green;
+	padding:10px;
+}
+
+.d3 {
+	background-color:blue;
+	padding:200px;
+	height:300px;
+}
+.d4 {
+	background-color:yellow;
+	height:300px;
+	padding:200px;
+}
+
+.d5 {
+	background-color:DodgerBlue;
+	height:300px;
+	padding:200px;
+}
