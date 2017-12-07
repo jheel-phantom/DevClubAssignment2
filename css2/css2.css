@@ -1,0 +1,76 @@
+body {
+	background-image: url("download.png");
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+div {
+	background-image: url("grey.jpg");
+	color: white;
+	border-radius: 25px;
+	height: 900px;
+	width: 750px;
+	position:fixed;
+	left:400px;
+}
+img {
+	height:200px;
+	width:200px;
+	border-radius: 25px;
+}
+.camel {
+	position:fixed;
+	left:425px;
+	top:100px;
+}
+
+.cheetah  {
+	position:fixed;
+	left:675px;
+	top:100px;
+}
+
+.ele {
+	position:fixed;
+	left:925px;
+	top:100px;
+}
+
+.gorilla {
+	position:fixed;
+	left:425px;
+	top:325px;
+}
+
+.koala {
+	position:fixed;
+	left:675px;
+	top:325px;
+}
+
+.puma {
+	position:fixed;
+	left:925px;
+	top:325px;
+}
+
+.polar {
+	position:fixed;
+	left:425px;
+	top:550px;
+}
+
+.tiger {
+	position:fixed;
+	left:675px;
+	top:550px;
+}
+
+.wolf {
+	position:fixed;
+	left:925px;
+	top:550px;
+}
