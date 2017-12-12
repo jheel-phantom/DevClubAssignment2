@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="js1.css">
+</head>
+<meta name="viewport" content="width=device-width,initial-scale= 1.0">
+<body>
+<div class="main" id = "main">
+<h1>Your Todos</h1>
+<input class="main_input" type="text" value="Add a new todo and hit enter" id="main_input" onfocus="document.getElementById('main_input').style.color='black'" onkeyup = "if (event.keyCode == 13) createTodo()"></br>
+</div>
+
+
+
+
+<script>
+
+function createTodo(){
+	var main_node = document.getElementById('main_input').value;
+	var para = document.createElement("input");
+	var d = new  Date();
+	para.value = main_node + "      "+d.toDateString();
+	para.type = "text";
+	
+	var element = document.getElementById("main");
+	element.appendChild(para);
+	para.style.width="300px";
+	para.readOnly = true;
+	para.style.color = "Gray";
+	para.onclick = function(){para.style.textDecoration = "line-through";};
+	para.class = "todos";
+	para.style.display = "block";
+	/*
+	para.onmouseover = para.style.backgroundImage = url("delete.jpg");
+	para.style.backgroundSize = "10px";
+	para.style.backgroundRepeat = "no-repeat";
+	*/
+	
+}
+
+/* function mouseover(element){
+	var del = document.createElement("img");
+	var edit = document.createElement("img");
+	del.style.float = "left";
+	del.style.width = "2px";
+	del.style.height = "2px";
+	del.style.position = "absolute";
+	del.src = "del.jpg";
+	
+	edit.style.float = "left";
+	edit.style.width = "2px";
+	edit.style.height = "2px";
+	edit.style.position = "absolute";
+	edit.src = "edit.png";
+	
+	 
+	element.appendChild(del);
+	var temp = element.value;
+	element.value = del + "  " + temp;
+	
+}
+*/
+</script>
+
+</body>
+</html>
